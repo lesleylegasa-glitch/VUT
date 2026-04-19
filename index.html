@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesley Legasa Maboki | VUT Engineering Vault</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --vut-green: #005a31;
+            --vut-gold: #fdb813;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 1. Sleek Navigation Bar (Names Only) */
+        .navbar-diamond {
+            background-color: white;
+            border-bottom: 3px solid var(--vut-green);
+            padding: 10px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .navbar-brand-custom {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--vut-green) !important;
+            font-weight: 800;
+            text-transform: uppercase;
+            font-size: 1.25rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .alias-gold {
+            color: var(--vut-gold);
+            font-weight: 800;
+            margin-left: 5px;
+        }
+
+        /* 2. Hero Section: Your Picture as Main Background */
+        .hero {
+            position: relative;
+            height: 70vh; /* Visible height for image */
+            /* Light overlay ensures picture visibility while keeping text readable */
+            background: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.3)), 
+                        url('874e8f4b-098b-4b58-8793-efde04089e4f.jpg'); /* Make sure filename is exact */
+            background-size: cover;
+            background-position: center 20%; /* Frames your face nicely */
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; /* SHIFTS ALL CONTENT TO THE LEFT */
+            color: white;
+            border-bottom: 8px solid var(--vut-gold);
+            padding-left: 80px; /* Gap from the left edge */
+        }
+
+        /* 3. VUT Logo in the Hero Section (Moved to the Left) */
+        .hero-vut-logo {
+            max-height: 100px; /* Logo size */
+            margin-bottom: 15px; /* Gap above the text */
+            filter: drop-shadow(0px 0px 8px rgba(255,255,255,0.4)); /* Subtle shadow so it stands out */
+        }
+
+        .hero-title-container {
+            text-align: left; /* Aligns title text to the left */
+        }
+
+        .hero-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 15px rgba(0,0,0,0.6);
+            color: white;
+            margin: 0;
+        }
+
+        /* Main Content Styling */
+        .section-header {
+            color: var(--vut-green);
+            font-weight: 800;
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 40px;
+            font-size: 2rem;
+            text-transform: uppercase;
+        }
+
+        .module-card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            transition: 0.3s;
+            background: white;
+            overflow: hidden;
+        }
+
+        .module-card:hover {
+            border-color: var(--vut-gold);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .card-header-vut {
+            background: var(--vut-green);
+            color: white;
+            padding: 15px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
+        .nav-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            border-bottom: 1px solid #eee;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .nav-row:hover {
+            background: #fdf8e6;
+            color: var(--vut-green);
+        }
+
+        footer {
+            background: #000;
+            color: #999;
+            padding: 30px 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-diamond sticky-top">
+        <div class="container d-flex justify-content-between align-items-center">
+            <span class="navbar-brand-custom">
+                Lesley Legasa Maboki <span class="alias-gold">"DIAMOND"</span>
+            </span>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-title-container">
+            <img src="vuttttt.jpg" alt="VUT" class="hero-vut-logo">
+            <h1 class="hero-title">Engineering Vault</h1>
+        </div>
+    </header>
+
+    <main class="container my-5 py-4">
+        <div class="text-center mb-5">
+            <h2 class="section-header">Electrical Engineering Resources</h2>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+            
+            <div class="col-md-5">
+                <div class="card module-card shadow-sm h-100">
+                    <div class="card-header-vut text-uppercase">Mathematics Portal</div>
+                    <div class="card-body p-0">
+                        <a href="maths1.html" class="nav-row">
+                            <span>Mathematics 1 (M1)</span>
+                            <span class="btn btn-sm btn-success">OPEN</span>
+                        </a>
+                        <a href="maths2.html" class="nav-row">
+                            <span>Mathematics 2 (M2)</span>
+                            <span class="btn btn-sm btn-success">OPEN</span>
+                        </a>
+                        <a href="maths3.html" class="nav-row">
+                            <span>Mathematics 3 (M3)</span>
+                            <span class="btn btn-sm btn-success">OPEN</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-5">
+                <div class="card module-card shadow-sm h-100">
+                    <div class="card-header-vut text-uppercase">Electrical Engineering Portal</div>
+                    <div class="card-body p-0">
+                        <a href="maths1.html" class="nav-row">
+                            <span>Electrical Engineering 1 (E1)</span>
+                            <span class="btn btn-sm btn-success">OPEN</span>
+                        </a>
+                        <a href="maths2.html" class="nav-row">
+                            <span>Electrical Engineering 2 (E2)</span>
+                            <span class="btn btn-sm btn-success">OPEN</span>
+                        </a>
+                
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-5">
+                <div class="card module-card shadow-sm h-100">
+                    <div class="card-header-vut text-uppercase">Engineering Chemistry  Portal</div>
+                    <div class="card-body p-0">
+                        <a href="maths1.html" class="nav-row">
+                            <span>Engineering Chemistry 1 (C1)</span>
+                            <span class="btn btn-sm btn-success">OPEN</span>
+                        </a>
+                        <a href="maths2.html" class="nav-row">
+                            <span>Engineering Chemistry 2 (C2)</span>
+                            <span class="btn btn-sm btn-success">OPEN</span>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-5">
+                <div class="card module-card shadow-sm h-100">
+                    <div class="card-header-vut text-uppercase">Computing application( Process control and Computer system) Portal</div>
+                    <div class="card-body p-0">
+                        <a href="maths1.html" class="nav-row">
+                            <span>Virtual Code Studio</span>
+                            <span class="btn btn-sm btn-success">OPEN</span>
+                        </a>
+                        <a href="maths2.html" class="nav-row">
+                            <span>Study Material</span>
+                            <span class="btn btn-sm btn-success">OPEN</span>
+                        </a>
+                        <a href="maths3.html" class="nav-row">
+                            <span>YouTube links</span>
+                            <span class="btn btn-sm btn-success">OPEN</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-5">
+                <div class="card module-card shadow-sm h-100">
+                    <div class="card-header-vut text-uppercase">Digital system Portal</div>
+                    <div class="card-body p-0">
+                        <a href="maths1.html" class="nav-row">
+                            <span>Digital system 1 (DS1)</span>
+                            <span class="btn btn-sm btn-success">OPEN</span>
+                        </a>
+                        <a href="maths2.html" class="nav-row">
+                            <span>Digital system 2 (DS2)</span>
+                            <span class="btn btn-sm btn-success">OPEN</span>
+                        </a>
+                        <a href="maths3.html" class="nav-row">
+                            <span>Digital system 3 (DS3)</span>
+                            <span class="btn btn-sm btn-success">OPEN</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-5">
+                <div class="card module-card shadow-sm h-100">
+                    <div class="card-header-vut text-uppercase">Physics Portal</div>
+                    <div class="card-body p-0">
+                        <a href="physics1.html" class="nav-row">
+                            <span>Physics 1 (PH1)</span>
+                            <span class="btn btn-sm btn-success">OPEN</span>
+                        </a>
+                        <a href="physics2.html" class="nav-row">
+                            <span>Physics 2 (PH2)</span>
+                            <span class="btn btn-sm btn-success">OPEN</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="mb-1 text-white fw-bold">Lesley Legasa Maboki</p>
+            <p class="mb-0">Vaal University of Technology | Electrical Engineering &copy; 2026</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
